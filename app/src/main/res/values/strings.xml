@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pl">
+    <string name="app_name">Layout lekcja 1</string>
+    <string name="registration_title">REJESTRACJA</string>
+    <string name="registration_subtitle">Utwórz nowe konto</string>
+    <string name="first_name">Imię</string>
+    <string name="first_name_hint">Wpisz imię</string>
+    <string name="last_name">Nazwisko</string>
+    <string name="last_name_hint">Wpisz nazwisko</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Wpisz email</string>
+    <string name="password">Hasło</string>
+    <string name="password_hint">Wpisz hasło</string>
+    <string name="register">ZAREJESTRUJ</string>
+    <string name="valid_data">Dane są poprawne</string>
+</resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -14,106 +13,73 @@
         android:padding="24dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:gravity="center"
             android:text="@string/registration_title"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
             android:text="@string/registration_subtitle"
             android:textSize="17sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/first_name"
-            android:textSize="16sp" />
-
+        <!-- Imię -->
         <EditText
             android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:minHeight="48dp"
-            android:textColorHint="?attr/colorOnSurfaceVariant"
-            android:hint="@string/first_name_hint"
+            android:hint="@string/first_name"
             android:inputType="textPersonName"
             android:autofillHints="personGivenName"
             android:imeOptions="actionNext"
-            android:singleLine="true" />
+            android:maxLines="1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/last_name"
-            android:textSize="16sp" />
-
+        <!-- Nazwisko -->
         <EditText
             android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:minHeight="48dp"
-            android:textColorHint="?attr/colorOnSurfaceVariant"
-            android:hint="@string/last_name_hint"
+            android:layout_marginTop="12dp"
+            android:hint="@string/last_name"
             android:inputType="textPersonName"
             android:autofillHints="personFamilyName"
             android:imeOptions="actionNext"
-            android:singleLine="true" />
+            android:maxLines="1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/email"
-            android:textSize="16sp" />
-
+        <!-- E-mail -->
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:minHeight="48dp"
-            android:textColorHint="?attr/colorOnSurfaceVariant"
-            android:hint="@string/email_hint"
+            android:layout_marginTop="12dp"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:autofillHints="emailAddress"
             android:imeOptions="actionNext"
-            android:singleLine="true" />
+            android:maxLines="1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/password"
-            android:textSize="16sp" />
-
+        <!-- Hasło -->
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:minHeight="48dp"
-            android:textColorHint="?attr/colorOnSurfaceVariant"
-            android:hint="@string/password_hint"
+            android:layout_marginTop="12dp"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:autofillHints="newPassword"
             android:imeOptions="actionDone"
-            android:singleLine="true" />
+            android:maxLines="1" />
 
         <Button
             android:id="@+id/registerButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:text="@string/register" />
 
@@ -122,9 +88,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:accessibilityLiveRegion="polite"
             android:gravity="center"
             android:textSize="16sp"
             android:visibility="gone" />
+
     </LinearLayout>
 </ScrollView>
